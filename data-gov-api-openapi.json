@@ -1,0 +1,4976 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "3",
+        "title": "Data.gov API",
+        "description": "The data.gov catalog is powered by CKAN, a powerful open source data platform that includes a robust API. Please be aware that data.gov and the data.gov CKAN API only contain metadata about datasets. This metadata includes URLs and descriptions of datasets, but it does not include the actual data within each dataset.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpscatalog.data.gov\/api\/3\/"
+    ],
+    "paths": {
+        "\/activity": {
+            "get": {
+                "summary": "Get Activity",
+                "description": "Fetch site activity, optionally filterd by user of org",
+                "operationId": "GetActivity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "organization",
+                        "in": "query",
+                        "description": "Filter activities for that particular organization"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "user",
+                        "in": "query",
+                        "description": "Filter activities for that particular user"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/": {
+            "get": {
+                "summary": "Get Datasets",
+                "description": "List or search all datasets",
+                "operationId": "GetDatasets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "geozone",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "license",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "extra",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "facets",
+                        "in": "query",
+                        "description": "Selected facets to fetch"
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "featured",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "temporal_coverage",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "granularity",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "owner",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "organization",
+                        "in": "query",
+                        "description": "Filter activities for that particular organization"
+                    },
+                    {
+                        "name": "badge",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "reuses",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Datasets",
+                "description": "Create a new dataset",
+                "operationId": "PostDatasets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/datasets\/badges\/": {
+            "get": {
+                "summary": "Get Datasets Badges",
+                "description": "List all available dataset badges and their labels",
+                "operationId": "GetDatasetsBadges",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/datasets\/checkurl\/": {
+            "get": {
+                "summary": "Get Datasets Checkurl",
+                "description": "Checks that a URL exists and returns metadata",
+                "operationId": "GetDatasetsCheckurl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "The URL to check"
+                    },
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": "The dataset related to the URL"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/community_resources\/": {
+            "get": {
+                "summary": "Get Datasets Community Resources",
+                "description": "List all community resources",
+                "operationId": "GetDatasetsCommunityResources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "query",
+                        "description": "Filter activities for that particular dataset"
+                    },
+                    {
+                        "name": "owner",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "organization",
+                        "in": "query",
+                        "description": "Filter activities for that particular organization"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Datasets Community Resources",
+                "description": "Create a new community resource",
+                "operationId": "PostDatasetsCommunityResources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/datasets\/community_resources\/{community}\/": {
+            "delete": {
+                "summary": "Delete Datasets Community Resources Community",
+                "description": "Delete a given community resource",
+                "operationId": "DeleteDatasetsCommunityResourcesCommunity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "community",
+                        "in": "path",
+                        "description": "The community resource unique identifier"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "query",
+                        "description": "Filter activities for that particular dataset"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Datasets Community Resources Community",
+                "description": "Retrieve a community resource given its identifier",
+                "operationId": "GetDatasetsCommunityResourcesCommunity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "community",
+                        "in": "path",
+                        "description": "The community resource unique identifier"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "query",
+                        "description": "Filter activities for that particular dataset"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Datasets Community Resources Community",
+                "description": "Update a given community resource",
+                "operationId": "PutDatasetsCommunityResourcesCommunity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "community",
+                        "in": "path",
+                        "description": "The community resource unique identifier"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "query",
+                        "description": "Filter activities for that particular dataset"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/community_resources\/{community}\/upload\/": {
+            "post": {
+                "summary": "Add Datasets Community Resources Community Upload",
+                "description": "Update the file related to a given community resource",
+                "operationId": "PostDatasetsCommunityResourcesCommunityUpload",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "community",
+                        "in": "path",
+                        "description": "The community resource unique identifier"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "query",
+                        "description": "Filter activities for that particular dataset"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/frequencies\/": {
+            "get": {
+                "summary": "Get Datasets Frequencies",
+                "description": "List all available frequencies",
+                "operationId": "GetDatasetsFrequencies",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/datasets\/full\/": {
+            "get": {
+                "summary": "Get Datasets Full",
+                "description": "",
+                "operationId": "GetDatasetsFull",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "geozone",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "license",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "extra",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "facets",
+                        "in": "query",
+                        "description": "Selected facets to fetch"
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "featured",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "temporal_coverage",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "granularity",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "owner",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "organization",
+                        "in": "query",
+                        "description": "Filter activities for that particular organization"
+                    },
+                    {
+                        "name": "badge",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "reuses",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/datasets\/licenses\/": {
+            "get": {
+                "summary": "Get Datasets Licenses",
+                "description": "List all available licenses",
+                "operationId": "GetDatasetsLicenses",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/datasets\/suggest\/": {
+            "get": {
+                "summary": "Get Datasets Suggest",
+                "description": "Suggest datasets",
+                "operationId": "GetDatasetsSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/suggest\/formats\/": {
+            "get": {
+                "summary": "Get Datasets Suggest Formats",
+                "description": "Suggest file formats",
+                "operationId": "GetDatasetsSuggestFormats",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/": {
+            "delete": {
+                "summary": "Delete Datasets Dataset",
+                "description": "Delete a dataset given its identifier",
+                "operationId": "DeleteDatasetsDataset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Datasets Dataset",
+                "description": "Get a dataset given its identifier",
+                "operationId": "GetDatasetsDataset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Datasets Dataset",
+                "description": "Update a dataset given its identifier",
+                "operationId": "PutDatasetsDataset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/badges\/": {
+            "post": {
+                "summary": "Add Datasets Dataset Badges",
+                "description": "Create a new badge for a given dataset",
+                "operationId": "PostDatasetsDatasetBadges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/badges\/{badge_kind}\/": {
+            "delete": {
+                "summary": "Delete Datasets Dataset Badges Badge Kind",
+                "description": "Delete a badge for a given dataset",
+                "operationId": "DeleteDatasetsDatasetBadgesBadgeKind",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "badge_kind",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/featured\/": {
+            "delete": {
+                "summary": "Delete Datasets Dataset Featured",
+                "description": "Unmark the dataset as featured",
+                "operationId": "DeleteDatasetsDatasetFeatured",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Datasets Dataset Featured",
+                "description": "Mark the dataset as featured",
+                "operationId": "PostDatasetsDatasetFeatured",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/full\/": {
+            "get": {
+                "summary": "Get Datasets Dataset Full",
+                "description": "Get a dataset given its identifier",
+                "operationId": "GetDatasetsDatasetFull",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/resources\/": {
+            "post": {
+                "summary": "Add Datasets Dataset Resources",
+                "description": "Create a new resource for a given dataset",
+                "operationId": "PostDatasetsDatasetResources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Datasets Dataset Resources",
+                "description": "Reorder resources",
+                "operationId": "PutDatasetsDatasetResources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/resources\/{rid}\/": {
+            "delete": {
+                "summary": "Delete Datasets Dataset Resources R",
+                "description": "Delete a given resource on a given dataset",
+                "operationId": "DeleteDatasetsDatasetResourcesR",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rid",
+                        "in": "path",
+                        "description": "The resource unique identifier"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Datasets Dataset Resources R",
+                "description": "Update a given resource on a given dataset",
+                "operationId": "PutDatasetsDatasetResourcesR",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rid",
+                        "in": "path",
+                        "description": "The resource unique identifier"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/resources\/{rid}\/upload\/": {
+            "post": {
+                "summary": "Add Datasets Dataset Resources R Upload",
+                "description": "Upload a file related to a given resource on a given dataset",
+                "operationId": "PostDatasetsDatasetResourcesRUpload",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rid",
+                        "in": "path",
+                        "description": "The resource unique identifier"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/upload\/": {
+            "post": {
+                "summary": "Add Datasets Dataset Upload",
+                "description": "Upload a new dataset resource",
+                "operationId": "PostDatasetsDatasetUpload",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{dataset}\/upload\/community\/": {
+            "post": {
+                "summary": "Add Datasets Dataset Upload Community",
+                "description": "Upload a new community resource",
+                "operationId": "PostDatasetsDatasetUploadCommunity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "path",
+                        "description": "The dataset ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/datasets\/{id}\/followers\/": {
+            "delete": {
+                "summary": "Delete Datasets  Followers",
+                "description": "Unfollow an object given its ID",
+                "operationId": "DeleteDatasetsFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Datasets  Followers",
+                "description": "List all followers for a given object",
+                "operationId": "GetDatasetsFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Datasets  Followers",
+                "description": "Follow an object given its ID",
+                "operationId": "PostDatasetsFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/discussions\/": {
+            "get": {
+                "summary": "Get Discussions",
+                "description": "List all Discussions",
+                "operationId": "GetDiscussions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "for",
+                        "in": "query",
+                        "description": "Filter discussions for a given subject"
+                    },
+                    {
+                        "name": "closed",
+                        "in": "query",
+                        "description": "Filters discussions on their closed status if specified"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Discussions",
+                "description": "Create a new Discussion",
+                "operationId": "PostDiscussions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/discussions\/{id}\/": {
+            "delete": {
+                "summary": "Delete Discussions",
+                "description": "Delete a discussion given its ID",
+                "operationId": "DeleteDiscussions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Discussions",
+                "description": "Get a discussion given its ID",
+                "operationId": "GetDiscussions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Discussions",
+                "description": "Add comment and optionnaly close a discussion given its ID",
+                "operationId": "PostDiscussions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/harvest\/backends": {
+            "get": {
+                "summary": "Get Harvest Backends",
+                "description": "List all available harvest backends",
+                "operationId": "GetHarvestBackends",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/harvest\/job\/{ident}\/": {
+            "get": {
+                "summary": "Get Harvest Job",
+                "description": "List all jobs for a given source",
+                "operationId": "GetHarvestJobEnt",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ident",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    }
+                ]
+            }
+        },
+        "\/harvest\/job_status": {
+            "get": {
+                "summary": "Get Harvest Job Status",
+                "description": "List all available harvesters",
+                "operationId": "GetHarvestJobStatus",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/harvest\/source\/{ident}": {
+            "delete": {
+                "summary": "Delete Harvest Source Ent",
+                "description": "",
+                "operationId": "DeleteHarvestSourceEnt",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ident",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Harvest Source Ent",
+                "description": "Get a single source given an ID or a slug",
+                "operationId": "GetHarvestSourceEnt",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ident",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/harvest\/source\/{ident}\/jobs\/": {
+            "get": {
+                "summary": "Get Harvest Source Ent Jobs",
+                "description": "List all jobs for a given source",
+                "operationId": "GetHarvestSourceEntJobs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ident",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    }
+                ]
+            }
+        },
+        "\/harvest\/source\/{ident}\/preview": {
+            "get": {
+                "summary": "Get Harvest Source Ent Preview",
+                "description": "Preview a single harvest source given an ID or a slug",
+                "operationId": "GetHarvestSourceEntPreview",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ident",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/harvest\/source\/{ident}\/validate": {
+            "post": {
+                "summary": "Add Harvest Source Ent Valate",
+                "description": "Validate or reject an harvest source",
+                "operationId": "PostHarvestSourceEntValate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ident",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/harvest\/sources\/": {
+            "get": {
+                "summary": "Get Harvest Sources",
+                "description": "List all harvest sources",
+                "operationId": "GetHarvestSources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Harvest Sources",
+                "description": "Create a new harvests source",
+                "operationId": "PostHarvestSources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/issues\/": {
+            "get": {
+                "summary": "Get Issues",
+                "description": "List all Issues",
+                "operationId": "GetIssues",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "for",
+                        "in": "query",
+                        "description": "Filter discussions for a given subject"
+                    },
+                    {
+                        "name": "closed",
+                        "in": "query",
+                        "description": "Filters discussions on their closed status if specified"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Issues",
+                "description": "Create a new Issue",
+                "operationId": "PostIssues",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/issues\/{id}\/": {
+            "get": {
+                "summary": "Get Issues",
+                "description": "Get an issue given its ID",
+                "operationId": "GetIssues",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Issues",
+                "description": "Add comment and optionnaly close an issue given its ID",
+                "operationId": "PostIssues",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/me\/": {
+            "get": {
+                "summary": "Get Me",
+                "description": "Fetch the current user (me) identity",
+                "operationId": "GetMe",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put Me",
+                "description": "Update my profile",
+                "operationId": "PutMe",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/me\/apikey": {
+            "delete": {
+                "summary": "Delete Me Apikey",
+                "description": "Clear\/destroy an apikey",
+                "operationId": "DeleteMeApikey",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Add Me Apikey",
+                "description": "(Re)Generate my API Key",
+                "operationId": "PostMeApikey",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/me\/avatar": {
+            "post": {
+                "summary": "Add Me Avatar",
+                "description": "Upload a new avatar",
+                "operationId": "PostMeAvatar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "bbox",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/me\/datasets\/": {
+            "get": {
+                "summary": "Get Me Datasets",
+                "description": "List all my datasets (including private ones)",
+                "operationId": "GetMeDatasets",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/me\/metrics\/": {
+            "get": {
+                "summary": "Get Me Metrics",
+                "description": "Fetch the current user (me) metrics",
+                "operationId": "GetMeMetrics",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/me\/org_community_resources\/": {
+            "get": {
+                "summary": "Get Me Org Community Resources",
+                "description": "List all community resources related to me and my organizations",
+                "operationId": "GetMeOrgCommunityResources",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    }
+                ]
+            }
+        },
+        "\/me\/org_datasets\/": {
+            "get": {
+                "summary": "Get Me Org Datasets",
+                "description": "List all datasets related to me and my organizations",
+                "operationId": "GetMeOrgDatasets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    }
+                ]
+            }
+        },
+        "\/me\/org_discussions\/": {
+            "get": {
+                "summary": "Get Me Org Discussions",
+                "description": "List all discussions related to my organizations",
+                "operationId": "GetMeOrgDiscussions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    }
+                ]
+            }
+        },
+        "\/me\/org_issues\/": {
+            "get": {
+                "summary": "Get Me Org Issues",
+                "description": "List all issues related to my organizations",
+                "operationId": "GetMeOrgIssues",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    }
+                ]
+            }
+        },
+        "\/me\/org_reuses\/": {
+            "get": {
+                "summary": "Get Me Org Reuses",
+                "description": "List all reuses related to me and my organizations",
+                "operationId": "GetMeOrgReuses",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    }
+                ]
+            }
+        },
+        "\/me\/reuses\/": {
+            "get": {
+                "summary": "Get Me Reuses",
+                "description": "List all my reuses (including private ones)",
+                "operationId": "GetMeReuses",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/metrics\/{id}": {
+            "get": {
+                "summary": "Get Metrics",
+                "description": "Fetch metrics for an object given its ID",
+                "operationId": "GetMetrics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": "Start of the period to fetch"
+                    },
+                    {
+                        "name": "cumulative",
+                        "in": "query",
+                        "description": "Either cumulative metrics or not"
+                    },
+                    {
+                        "name": "end",
+                        "in": "query",
+                        "description": "End of the period to fetch"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "day",
+                        "in": "query",
+                        "description": "Specific day date to fetch"
+                    }
+                ]
+            }
+        },
+        "\/notifications\/": {
+            "get": {
+                "summary": "Get Notifications",
+                "description": "List all current user pending notifications",
+                "operationId": "GetNotifications",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/oembeds\/": {
+            "get": {
+                "summary": "Get Oembeds",
+                "description": "The returned payload is a list of OEmbed formatted responses",
+                "operationId": "GetOembeds",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "references",
+                        "in": "query",
+                        "description": "References of the resources to embed."
+                    }
+                ]
+            }
+        },
+        "\/organizations\/": {
+            "get": {
+                "summary": "Get Organizations",
+                "description": "List or search all organizations",
+                "operationId": "GetOrganizations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "datasets",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "facets",
+                        "in": "query",
+                        "description": "Selected facets to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "followers",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "reuses",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "permitted_reuses",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "badge",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Organizations",
+                "description": "Create a new organization",
+                "operationId": "PostOrganizations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/badges\/": {
+            "get": {
+                "summary": "Get Organizations Badges",
+                "description": "List all available organization badges and their labels",
+                "operationId": "GetOrganizationsBadges",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/organizations\/suggest\/": {
+            "get": {
+                "summary": "Get Organizations Suggest",
+                "description": "Suggest organizations",
+                "operationId": "GetOrganizationsSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{id}\/followers\/": {
+            "delete": {
+                "summary": "Delete Organizations  Followers",
+                "description": "Unfollow an object given its ID",
+                "operationId": "DeleteOrganizationsFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Organizations  Followers",
+                "description": "List all followers for a given object",
+                "operationId": "GetOrganizationsFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Organizations  Followers",
+                "description": "Follow an object given its ID",
+                "operationId": "PostOrganizationsFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/": {
+            "delete": {
+                "summary": "Delete Organizations Org",
+                "description": "Delete a organization given its identifier",
+                "operationId": "DeleteOrganizationsOrg",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Organizations Org",
+                "description": "Get a organization given its identifier",
+                "operationId": "GetOrganizationsOrg",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Organizations Org",
+                "description": "Update a organization given its identifier",
+                "operationId": "PutOrganizationsOrg",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/badges\/": {
+            "post": {
+                "summary": "Add Organizations Org Badges",
+                "description": "Create a new badge for a given organization",
+                "operationId": "PostOrganizationsOrgBadges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/badges\/{badge_kind}\/": {
+            "delete": {
+                "summary": "Delete Organizations Org Badges Badge Kind",
+                "description": "Delete a badge for a given organization",
+                "operationId": "DeleteOrganizationsOrgBadgesBadgeKind",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "badge_kind",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/datasets\/": {
+            "get": {
+                "summary": "Get Organizations Org Datasets",
+                "description": "List organization datasets (including private ones when member)",
+                "operationId": "GetOrganizationsOrgDatasets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/discussions\/": {
+            "get": {
+                "summary": "Get Organizations Org Discussions",
+                "description": "List organization discussions",
+                "operationId": "GetOrganizationsOrgDiscussions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/issues\/": {
+            "get": {
+                "summary": "Get Organizations Org Issues",
+                "description": "List organization issues",
+                "operationId": "GetOrganizationsOrgIssues",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/logo": {
+            "post": {
+                "summary": "Add Organizations Org Logo",
+                "description": "Upload a new logo",
+                "operationId": "PostOrganizationsOrgLogo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "bbox",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Organizations Org Logo",
+                "description": "Set the logo BBox",
+                "operationId": "PutOrganizationsOrgLogo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "bbox",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/member\/{user}": {
+            "delete": {
+                "summary": "Delete Organizations Org Member User",
+                "description": "Delete member from an organization",
+                "operationId": "DeleteOrganizationsOrgMemberUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Organizations Org Member User",
+                "description": "Add a member into a given organization",
+                "operationId": "PostOrganizationsOrgMemberUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Organizations Org Member User",
+                "description": "Update member status into a given organization",
+                "operationId": "PutOrganizationsOrgMemberUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/membership\/": {
+            "get": {
+                "summary": "Get Organizations Org Membership",
+                "description": "List membership requests for a given organization",
+                "operationId": "GetOrganizationsOrgMembership",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "If provided, only return requests ith a given status"
+                    },
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Organizations Org Membership",
+                "description": "Apply for membership to a given organization",
+                "operationId": "PostOrganizationsOrgMembership",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/membership\/{id}\/accept\/": {
+            "post": {
+                "summary": "Add Organizations Org Membership  Accept",
+                "description": "Accept user membership to a given organization",
+                "operationId": "PostOrganizationsOrgMembershipAccept",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/membership\/{id}\/refuse\/": {
+            "post": {
+                "summary": "Add Organizations Org Membership  Refuse",
+                "description": "Refuse user membership to a given organization",
+                "operationId": "PostOrganizationsOrgMembershipRefuse",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "comment",
+                        "in": "body",
+                        "description": "The refusal reason"
+                    },
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/organizations\/{org}\/reuses\/": {
+            "get": {
+                "summary": "Get Organizations Org Reuses",
+                "description": "List organization reuses (including private ones when member)",
+                "operationId": "GetOrganizationsOrgReuses",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "org",
+                        "in": "path",
+                        "description": "The organization ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/posts\/": {
+            "get": {
+                "summary": "Posts",
+                "description": "List all posts",
+                "operationId": "GetPosts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Post",
+                "description": "Create a post",
+                "operationId": "PostPosts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/posts\/{post}\/": {
+            "delete": {
+                "summary": "Delete Post",
+                "description": "Delete a given post",
+                "operationId": "DeletePostsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "description": "The post ID or slug"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Post",
+                "description": "Get a given post",
+                "operationId": "GetPostsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "description": "The post ID or slug"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Post",
+                "description": "Update a given post",
+                "operationId": "PutPostsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "description": "The post ID or slug"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/posts\/{post}\/image": {
+            "post": {
+                "summary": "Add Post Image",
+                "description": "Upload a new image",
+                "operationId": "PostPostsPostImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "description": "The post ID or slug"
+                    },
+                    {
+                        "name": "bbox",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Post Image",
+                "description": "Set the image BBox",
+                "operationId": "PutPostsPostImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "description": "The post ID or slug"
+                    },
+                    {
+                        "name": "bbox",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reuses\/": {
+            "get": {
+                "summary": "Get Reuses",
+                "description": "Get Reuses",
+                "operationId": "GetReuses",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "datasets",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "extra",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "facets",
+                        "in": "query",
+                        "description": "Selected facets to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "dataset",
+                        "in": "query",
+                        "description": "Filter activities for that particular dataset"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "featured",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "followers",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "owner",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "organization",
+                        "in": "query",
+                        "description": "Filter activities for that particular organization"
+                    },
+                    {
+                        "name": "badge",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Reuses",
+                "description": "Create a new object",
+                "operationId": "PostReuses",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reuses\/badges\/": {
+            "get": {
+                "summary": "Get Reuses Badges",
+                "description": "List all available reuse badges and their labels",
+                "operationId": "GetReusesBadges",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/reuses\/suggest\/": {
+            "get": {
+                "summary": "Get Reuses Suggest",
+                "description": "Suggest reuses",
+                "operationId": "GetReusesSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/reuses\/types\/": {
+            "get": {
+                "summary": "Get Reuses Types",
+                "description": "List all reuse types",
+                "operationId": "GetReusesTypes",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/reuses\/{id}\/followers\/": {
+            "delete": {
+                "summary": "Delete Reuses  Followers",
+                "description": "Unfollow an object given its ID",
+                "operationId": "DeleteReusesFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Reuses  Followers",
+                "description": "List all followers for a given object",
+                "operationId": "GetReusesFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Reuses  Followers",
+                "description": "Follow an object given its ID",
+                "operationId": "PostReusesFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reuses\/{reuse}\/": {
+            "delete": {
+                "summary": "Delete Reuses Reuse",
+                "description": "Delete a given reuse",
+                "operationId": "DeleteReusesReuse",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Reuses Reuse",
+                "description": "Fetch a given reuse",
+                "operationId": "GetReusesReuse",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Reuses Reuse",
+                "description": "Update a given reuse",
+                "operationId": "PutReusesReuse",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reuses\/{reuse}\/badges\/": {
+            "post": {
+                "summary": "Add Reuses Reuse Badges",
+                "description": "Create a new badge for a given reuse",
+                "operationId": "PostReusesReuseBadges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reuses\/{reuse}\/badges\/{badge_kind}\/": {
+            "delete": {
+                "summary": "Delete Reuses Reuse Badges Badge Kind",
+                "description": "Delete a badge for a given reuse",
+                "operationId": "DeleteReusesReuseBadgesBadgeKind",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "badge_kind",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/reuses\/{reuse}\/datasets\/": {
+            "post": {
+                "summary": "Add Reuses Reuse Datasets",
+                "description": "Add a dataset to a given reuse",
+                "operationId": "PostReusesReuseDatasets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reuses\/{reuse}\/featured\/": {
+            "delete": {
+                "summary": "Delete Reuses Reuse Featured",
+                "description": "Unmark a reuse as featured",
+                "operationId": "DeleteReusesReuseFeatured",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Reuses Reuse Featured",
+                "description": "Mark a reuse as featured",
+                "operationId": "PostReusesReuseFeatured",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    }
+                ]
+            }
+        },
+        "\/reuses\/{reuse}\/image": {
+            "post": {
+                "summary": "Add Reuses Reuse Image",
+                "description": "Upload a new reuse image",
+                "operationId": "PostReusesReuseImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "reuse",
+                        "in": "path",
+                        "description": "The reuse ID or slug"
+                    },
+                    {
+                        "name": "file",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "bbox",
+                        "in": "formData",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/site\/": {
+            "get": {
+                "summary": "Get Site",
+                "description": "Site-wide variables",
+                "operationId": "GetSite",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/site\/home\/datasets\/": {
+            "get": {
+                "summary": "Get Site Home Datasets",
+                "description": "List homepage datasets",
+                "operationId": "GetSiteHomeDatasets",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put Site Home Datasets",
+                "description": "Set the homepage datasets editorial selection",
+                "operationId": "PutSiteHomeDatasets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/site\/home\/reuses\/": {
+            "get": {
+                "summary": "Get Site Home Reuses",
+                "description": "List homepage featured reuses",
+                "operationId": "GetSiteHomeReuses",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put Site Home Reuses",
+                "description": "Set the homepage reuses editorial selection",
+                "operationId": "PutSiteHomeReuses",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/spatial\/coverage\/{level}": {
+            "get": {
+                "summary": "Get Spatial Coverage Level",
+                "description": "List each zone for a given level with their datasets count",
+                "operationId": "GetSpatialCoverageLevel",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "level",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/spatial\/granularities": {
+            "get": {
+                "summary": "Get Spatial Granularities",
+                "description": "List all known spatial granularities",
+                "operationId": "GetSpatialGranularities",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/spatial\/levels": {
+            "get": {
+                "summary": "Get Spatial Levels",
+                "description": "List all known levels",
+                "operationId": "GetSpatialLevels",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/spatial\/zone\/{id}": {
+            "get": {
+                "summary": "Get Spatial Zone",
+                "description": "Fetch a zone",
+                "operationId": "GetSpatialZone",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/spatial\/zones\/suggest": {
+            "get": {
+                "summary": "Get Spatial Zones Suggest",
+                "description": "Suggest geospatial zones",
+                "operationId": "GetSpatialZonesSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/spatial\/zones\/{ids}": {
+            "get": {
+                "summary": "Get Spatial Zones S",
+                "description": "Fetch a zone list as GeoJSON",
+                "operationId": "GetSpatialZonesS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "path",
+                        "description": "A zone identifiers list (comma separated)"
+                    }
+                ]
+            }
+        },
+        "\/tags\/suggest\/": {
+            "get": {
+                "summary": "Get Tags Suggest",
+                "description": "Suggest tags",
+                "operationId": "GetTagsSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/territory\/suggest\/": {
+            "get": {
+                "summary": "Get Territory Suggest",
+                "description": "",
+                "operationId": "GetTerritorySuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/topics\/": {
+            "get": {
+                "summary": "Get Topics",
+                "description": "List all topics",
+                "operationId": "GetTopics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Topics",
+                "description": "Create a topic",
+                "operationId": "PostTopics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/topics\/{topic}\/": {
+            "delete": {
+                "summary": "Delete Topics Topic",
+                "description": "Delete a given topic",
+                "operationId": "DeleteTopicsTopic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "topic",
+                        "in": "path",
+                        "description": "The topic ID or slug"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Topics Topic",
+                "description": "Get a given topic",
+                "operationId": "GetTopicsTopic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "topic",
+                        "in": "path",
+                        "description": "The topic ID or slug"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Topics Topic",
+                "description": "Update a given topic",
+                "operationId": "PutTopicsTopic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "topic",
+                        "in": "path",
+                        "description": "The topic ID or slug"
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/transfer\/": {
+            "get": {
+                "summary": "Get Transfer",
+                "description": "List all transfer requests",
+                "operationId": "GetTransfer",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Add Transfer",
+                "description": "Initiate transfer request",
+                "operationId": "PostTransfer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/transfer\/{id}\/": {
+            "get": {
+                "summary": "Get Transfer",
+                "description": "Fetch a transfer request given its identifier",
+                "operationId": "GetTransfer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Transfer",
+                "description": "Respond to a transfer request",
+                "operationId": "PostTransfer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/": {
+            "get": {
+                "summary": "Get Users",
+                "description": "List all objects",
+                "operationId": "GetUsers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "The field (and direction) on which sorting apply"
+                    },
+                    {
+                        "name": "datasets",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "facets",
+                        "in": "query",
+                        "description": "Selected facets to fetch"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "reuses",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "organization",
+                        "in": "query",
+                        "description": "Filter activities for that particular organization"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Users",
+                "description": "Create a new object",
+                "operationId": "PostUsers",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/suggest\/": {
+            "get": {
+                "summary": "Get Users Suggest",
+                "description": "Suggest users",
+                "operationId": "GetUsersSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "The amount of suggestion to fetch"
+                    }
+                ]
+            }
+        },
+        "\/users\/{id}\/followers\/": {
+            "delete": {
+                "summary": "Delete Users  Followers",
+                "description": "Unfollow an object given its ID",
+                "operationId": "DeleteUsersFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Users  Followers",
+                "description": "List all followers for a given object",
+                "operationId": "GetUsersFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The page size to fetch"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page to fetch"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Users  Followers",
+                "description": "Follow an user given its ID",
+                "operationId": "PostUsersFollowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{user}\/": {
+            "delete": {
+                "summary": "Delete Users User",
+                "description": "Delete a given object",
+                "operationId": "DeleteUsersUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Users User",
+                "description": "Get a given object",
+                "operationId": "GetUsersUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Users User",
+                "description": "Update a given object",
+                "operationId": "PutUsersUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/workers\/jobs\/": {
+            "get": {
+                "summary": "Get Workers Jobs",
+                "description": "List all scheduled jobs",
+                "operationId": "GetWorkersJobs",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Add Workers Jobs",
+                "description": "Create a new scheduled job",
+                "operationId": "PostWorkersJobs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "payload",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/workers\/jobs\/schedulables": {
+            "get": {
+                "summary": "Get Workers Jobs Schedulables",
+                "description": "List all schedulable jobs",
+                "operationId": "GetWorkersJobsSchedulables",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/workers\/jobs\/{id}": {
+            "delete": {
+                "summary": "Delete Workers Jobs",
+                "description": "Delete a single scheduled job",
+                "operationId": "DeleteWorkersJobs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Workers Jobs",
+                "description": "Fetch a single scheduled job",
+                "operationId": "GetWorkersJobs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Workers Jobs",
+                "description": "Update a single scheduled job",
+                "operationId": "PutWorkersJobs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/workers\/tasks\/{id}": {
+            "get": {
+                "summary": "Get Workers Tasks",
+                "description": "Get a tasks status given its ID",
+                "operationId": "GetWorkersTasks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Activity": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "icon": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "kwargs": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "related_to": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "related_to_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "related_to_kind": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "related_to_url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ActivityPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ApiKey": {
+                "type": "object",
+                "properties": {
+                    "apikey": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Badge": {
+                "type": "object",
+                "properties": {
+                    "kind": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BaseReference": {
+                "type": "object",
+                "properties": {
+                    "class": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Checksum": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "CommunityResourcePage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Crontab": {
+                "type": "object",
+                "properties": {
+                    "day_of_month": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "day_of_week": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "hour": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "minute": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "month_of_year": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Dataset": {
+                "type": "object",
+                "properties": {
+                    "badges": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "community_resources": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "featured": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "frequency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "frequency_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "license": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "private": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "resources": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DatasetFullPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DatasetPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DatasetPreview": {
+                "type": "object",
+                "properties": {
+                    "badges": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "community_resources": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "featured": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "frequency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "frequency_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "license": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "private": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "resources": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DatasetSuggestion": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Discussion": {
+                "type": "object",
+                "properties": {
+                    "class": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "closed": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "closed_by": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DiscussionMessage": {
+                "type": "object",
+                "properties": {
+                    "content": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "posted_on": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DiscussionPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "DiscussionResponse": {
+                "type": "object",
+                "properties": {
+                    "close": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Follow": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "since": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "FollowPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Frequency": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "GeoGranularity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "GeoJSON": {
+                "type": "object",
+                "properties": {
+                    "coordinates": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "GeoJSONFeature": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "properties": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "GeoJSONFeatureCollection": {
+                "type": "object",
+                "properties": {
+                    "features": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "GeoLevel": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parents": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestBackend": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestError": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "details": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestItem": {
+                "type": "object",
+                "properties": {
+                    "args": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "ended": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "kwargs": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "remote_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "started": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestItemPreview": {
+                "type": "object",
+                "properties": {
+                    "args": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "ended": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "kwargs": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "remote_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "started": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestJob": {
+                "type": "object",
+                "properties": {
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "ended": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "started": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestJobPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestJobPreview": {
+                "type": "object",
+                "properties": {
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "ended": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "started": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestSource": {
+                "type": "object",
+                "properties": {
+                    "active": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "backend": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "config": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "HarvestSourceValidation": {
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "on": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Interval": {
+                "type": "object",
+                "properties": {
+                    "every": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "period": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Issue": {
+                "type": "object",
+                "properties": {
+                    "class": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "closed": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "closed_by": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "subject": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "IssueMessage": {
+                "type": "object",
+                "properties": {
+                    "content": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "posted_on": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "IssuePage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "IssueResponse": {
+                "type": "object",
+                "properties": {
+                    "close": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Job": {
+                "type": "object",
+                "properties": {
+                    "args": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "kwargs": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_run_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_run_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "schedule": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "task": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "License": {
+                "type": "object",
+                "properties": {
+                    "flags": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "maintainer": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Member": {
+                "type": "object",
+                "properties": {
+                    "role": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "MembershipRequest": {
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Metric": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "level": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "object_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "values": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "MyMetrics": {
+                "type": "object",
+                "properties": {
+                    "datasets_count": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "datasets_org_count": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "followers_count": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "followers_org_count": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "resources_availability": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Notification": {
+                "type": "object",
+                "properties": {
+                    "created_on": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "details": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Organization": {
+                "type": "object",
+                "properties": {
+                    "acronym": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "badges": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "logo": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "members": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "OrganizationPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "OrganizationSuggestion": {
+                "type": "object",
+                "properties": {
+                    "acronym": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Post": {
+                "type": "object",
+                "properties": {
+                    "content": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "credit_to": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "credit_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "datasets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "headline": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "private": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "reuses": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PostPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "RefuseMembership": {
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Resource": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "filesize": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "filetype": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "format": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_available": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "mime": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "published": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Reuse": {
+                "type": "object",
+                "properties": {
+                    "badges": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "datasets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "featured": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "private": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ReusePage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ReuseSuggestion": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ReuseType": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Site": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SpatialCoverage": {
+                "type": "object",
+                "properties": {
+                    "granularity": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "zones": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Task": {
+                "type": "object",
+                "properties": {
+                    "exc": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "traceback": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TemporalCoverage": {
+                "type": "object",
+                "properties": {
+                    "end": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "start": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TerritorySuggestion": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "keys": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "level": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Topic": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "datasets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "featured": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "private": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "reuses": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TopicPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Transfer": {
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "reponse_comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "responded": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TransferRequest": {
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TransferResponse": {
+                "type": "object",
+                "properties": {
+                    "comment": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "response": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UploadedImage": {
+                "type": "object",
+                "properties": {
+                    "image": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "success": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UploadedResource": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "filesize": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "filetype": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "format": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "is_available": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "mime": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "published": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "success": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "about": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "avatar": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "organizations": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "roles": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "since": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "website": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserPage": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "facets": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "previous_page": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserSuggestion": {
+                "type": "object",
+                "properties": {
+                    "avatar_url": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "first_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
