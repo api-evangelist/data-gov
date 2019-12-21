@@ -1,5 +1,5 @@
 {
-    "id": "2aea2639716af3f1f2fc5ff413ea0b44",
+    "id": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
     "name": "Data.gov API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "f320171c2eb2fdd240a82b6e5a9113e3",
+            "id": "fc86d50241884c8c421ade03102ee2a2",
             "name": "Get Activity",
             "url": "httpscatalog.data.gov\/api\/3\/\/activity",
             "description": "Fetch site activity, optionally filterd by user of org",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "835905fcb6eb90937ea9c0b1957a5cd2",
+            "id": "336765a0657db63b4371536994f93fe0",
             "name": "Get Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/",
             "description": "List or search all datasets",
@@ -201,11 +201,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ce1133d4e94c3dd7136e86eab3f054cd",
+            "id": "0560432feab16fd3ab762c2e3b437287",
             "name": "Add Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/",
             "description": "Create a new dataset",
@@ -232,11 +232,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "63b35cd1bf15701cc120e91b03c7a5bf",
+            "id": "ee0d34ddd94ace7766ec7eedbff0b101",
             "name": "Get Datasets Badges",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/badges\/",
             "description": "List all available dataset badges and their labels",
@@ -255,11 +255,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "7d29f2b75a3cf5f4b6deb7d64dd1d754",
+            "id": "6037a449b2c33671f2b147a3befe0ac1",
             "name": "Get Datasets Checkurl",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/checkurl\/",
             "description": "Checks that a URL exists and returns metadata",
@@ -293,11 +293,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6a25c3a041bbbfd0b97ffb3c5473d4ba",
+            "id": "a2169eade303f43cec77b10c3dc389a0",
             "name": "Get Datasets Community Resources",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/community_resources\/",
             "description": "List all community resources",
@@ -359,11 +359,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "985343833104e4a656021c183cb3c0a9",
+            "id": "a50d02b5b5844f9ff0d55ce72703f93f",
             "name": "Add Datasets Community Resources",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/community_resources\/",
             "description": "Create a new community resource",
@@ -390,11 +390,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "0fd7b7318d846ac0e6fba31bd61d3ce5",
+            "id": "7dc1d92cf96129fc255f8ab8b25203a5",
             "name": "Delete Datasets Community Resources Community",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/community_resources\/{community}\/",
             "description": "Delete a given community resource",
@@ -428,11 +428,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "f6a51ccad89f52cac73b647ecdeae5e6",
+            "id": "7343182592a1ed8cde3ddd38087d5234",
             "name": "Get Datasets Community Resources Community",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/community_resources\/{community}\/",
             "description": "Retrieve a community resource given its identifier",
@@ -466,11 +466,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "20b4defb2fca39cc2a15da73b383ca1f",
+            "id": "9087098ff6e61decdb05c2789dc621a7",
             "name": "Put Datasets Community Resources Community",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/community_resources\/{community}\/",
             "description": "Update a given community resource",
@@ -511,11 +511,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "fe290f4fe7546c5118d5e59a440135b7",
+            "id": "1254ea436030d69ae9891418d028f4d6",
             "name": "Add Datasets Community Resources Community Upload",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/community_resources\/{community}\/upload\/",
             "description": "Update the file related to a given community resource",
@@ -549,11 +549,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "e2560e6d557b00d6cd48d6bf464557c9",
+            "id": "76d9ad828f1e014add80141bf0a1dc49",
             "name": "Get Datasets Frequencies",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/frequencies\/",
             "description": "List all available frequencies",
@@ -572,11 +572,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "013dd2d4c5946765e5e018230e90ca53",
+            "id": "cb7fd2594f640f5dcaa0d2bdcef0ca5e",
             "name": "Get Datasets Full",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/full\/",
             "description": "",
@@ -715,11 +715,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "2e479f100f3a18db7ad1b30784b5ddf7",
+            "id": "ea8ef6f746a03f151e3556c01622455d",
             "name": "Get Datasets Licenses",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/licenses\/",
             "description": "List all available licenses",
@@ -738,11 +738,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "9e9f74ebbe733ecc8166833d2f01b8ab",
+            "id": "d3f7775c7d50f56e198ea5085cdb735f",
             "name": "Get Datasets Suggest",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/suggest\/",
             "description": "Suggest datasets",
@@ -776,11 +776,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "409e12b243b479a1ceca81689203b087",
+            "id": "5d6297d6e0ce1f6b050c6cf749eaf332",
             "name": "Get Datasets Suggest Formats",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/suggest\/formats\/",
             "description": "Suggest file formats",
@@ -814,11 +814,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "99f2fa979a7a7ad271de0dab7efebe56",
+            "id": "86a8720e64cbf22e19d5596b781c0f32",
             "name": "Delete Datasets Dataset",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/",
             "description": "Delete a dataset given its identifier",
@@ -845,11 +845,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "fdaabb53371f90b3d2dee8b5614552a1",
+            "id": "6ee54245ce972d767013a4135915a843",
             "name": "Get Datasets Dataset",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/",
             "description": "Get a dataset given its identifier",
@@ -876,11 +876,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ff11a41cb2a8a383fb718759c3226e12",
+            "id": "ae9fc47db779dccff8b1d281da62b6e9",
             "name": "Put Datasets Dataset",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/",
             "description": "Update a dataset given its identifier",
@@ -914,11 +914,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "5a2451373d0c95777bb5c1552ab3a9e8",
+            "id": "bda11fb7a1a41dcab8f22ec7e03dc024",
             "name": "Add Datasets Dataset Badges",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/badges\/",
             "description": "Create a new badge for a given dataset",
@@ -952,11 +952,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6e7847630a57f16f5ccf0b012ebc6ae5",
+            "id": "f0f3bcc4a9f77fb236767f9e8224fbf9",
             "name": "Delete Datasets Dataset Badges Badge Kind",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/badges\/{badge_kind}\/",
             "description": "Delete a badge for a given dataset",
@@ -990,11 +990,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "929c794ecd007216a352547d8a6a7bc0",
+            "id": "d964d2fa11b3072663a679a95ce0772d",
             "name": "Delete Datasets Dataset Featured",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/featured\/",
             "description": "Unmark the dataset as featured",
@@ -1021,11 +1021,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "9066c4e95d8e80c76cf86cf9472a9a83",
+            "id": "8ba13062d2d8550c115372d5d870fa9e",
             "name": "Add Datasets Dataset Featured",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/featured\/",
             "description": "Mark the dataset as featured",
@@ -1052,11 +1052,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "15a7c41b5494b155419a591a6738e57a",
+            "id": "70865c19a72357554a7e1d2aa48f75e1",
             "name": "Get Datasets Dataset Full",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/full\/",
             "description": "Get a dataset given its identifier",
@@ -1083,11 +1083,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "1ba8c5c6482692c8206f6d8bd25e994f",
+            "id": "d60df80229b950eae57e62cc94aaf4db",
             "name": "Add Datasets Dataset Resources",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/resources\/",
             "description": "Create a new resource for a given dataset",
@@ -1121,11 +1121,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "af0dc929618ba529be8129ca42f0fcb0",
+            "id": "951c2b421b55db2e05af25f4fd8b4cf7",
             "name": "Put Datasets Dataset Resources",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/resources\/",
             "description": "Reorder resources",
@@ -1159,11 +1159,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "9d144aaf7d3da553c9e792eeedd84fe8",
+            "id": "d94d259592dec27c04aaf70917643333",
             "name": "Delete Datasets Dataset Resources R",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/resources\/{rid}\/",
             "description": "Delete a given resource on a given dataset",
@@ -1197,11 +1197,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "f18118a90f42ba15b83ca6239f3dd9f9",
+            "id": "83dbf5e1af5d4a2ce0b9071399b35bd1",
             "name": "Put Datasets Dataset Resources R",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/resources\/{rid}\/",
             "description": "Update a given resource on a given dataset",
@@ -1242,11 +1242,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "7aab793d300c5798c190f7c417be2844",
+            "id": "a9f436abd7b742887653d754523d05c9",
             "name": "Add Datasets Dataset Resources R Upload",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/resources\/{rid}\/upload\/",
             "description": "Upload a file related to a given resource on a given dataset",
@@ -1280,11 +1280,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "fb0f3820555d9f223294305f51d20f08",
+            "id": "4c74afcdbc642912819c10a409c19dee",
             "name": "Add Datasets Dataset Upload",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/upload\/",
             "description": "Upload a new dataset resource",
@@ -1318,11 +1318,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "2e986529fc4335bacac69a5be5c993f1",
+            "id": "67f6fc7b76f660503f8e9ec7065adf81",
             "name": "Add Datasets Dataset Upload Community",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{dataset}\/upload\/community\/",
             "description": "Upload a new community resource",
@@ -1356,11 +1356,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "d95804ce85e45c2c771f300471c580ce",
+            "id": "6bb029a5480abaa0c1bc9c9cb608e836",
             "name": "Delete Datasets  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{id}\/followers\/",
             "description": "Unfollow an object given its ID",
@@ -1387,11 +1387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "3212ed4749d4c699a492a9ab687f6052",
+            "id": "cfbe7ba74e71b2c7c3cefe64e1c4b7de",
             "name": "Get Datasets  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{id}\/followers\/",
             "description": "List all followers for a given object",
@@ -1432,11 +1432,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ffd59cf7b75da5c197b1b3cb02b98c76",
+            "id": "db54c4f12f43c235c8acd393ddd5a7fc",
             "name": "Add Datasets  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/datasets\/{id}\/followers\/",
             "description": "Follow an object given its ID",
@@ -1463,11 +1463,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "a94367e82dffa46bb452523a88978943",
+            "id": "2f8486b9ed822b7dce3831a5d229ca13",
             "name": "Get Discussions",
             "url": "httpscatalog.data.gov\/api\/3\/\/discussions\/",
             "description": "List all Discussions",
@@ -1522,11 +1522,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "d4a0f1eaf82e86a082e853a191cbd4f3",
+            "id": "f021692bdc69ebde56bf577f0dd6df56",
             "name": "Add Discussions",
             "url": "httpscatalog.data.gov\/api\/3\/\/discussions\/",
             "description": "Create a new Discussion",
@@ -1553,11 +1553,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "3b68c854a5ae85dc3e9054a6812e89f5",
+            "id": "a245a0ba9577006ff28f75d49016dc4e",
             "name": "Delete Discussions",
             "url": "httpscatalog.data.gov\/api\/3\/\/discussions\/{id}\/",
             "description": "Delete a discussion given its ID",
@@ -1584,11 +1584,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "a1d70b341a982eb199b2c53eb61d6618",
+            "id": "aeefb1154b7cb9a34bac23147d9513c5",
             "name": "Get Discussions",
             "url": "httpscatalog.data.gov\/api\/3\/\/discussions\/{id}\/",
             "description": "Get a discussion given its ID",
@@ -1615,11 +1615,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "73dd4d3171fc3e636943b6594314fdc3",
+            "id": "de7a4c9baf55993701c6d67a9f544b33",
             "name": "Add Discussions",
             "url": "httpscatalog.data.gov\/api\/3\/\/discussions\/{id}\/",
             "description": "Add comment and optionnaly close a discussion given its ID",
@@ -1653,11 +1653,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "409f7b07df7db0ecfcd15fd91e5d3a31",
+            "id": "19155bab72e92132197fd06e05fa40d0",
             "name": "Get Harvest Backends",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/backends",
             "description": "List all available harvest backends",
@@ -1676,11 +1676,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "06991a958ce3a735926fe2d792067547",
+            "id": "b2c34679dfb7f6179ac69fd2ec824b89",
             "name": "Get Harvest Job",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/job\/{ident}\/",
             "description": "List all jobs for a given source",
@@ -1721,11 +1721,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "55568a24c38ff9623a863eb10ca0cdae",
+            "id": "90a8d25cc19a6c9f19b385330064e2d1",
             "name": "Get Harvest Job Status",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/job_status",
             "description": "List all available harvesters",
@@ -1744,11 +1744,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "eefd32afc85d96ed1d3a5b2e4efb28ba",
+            "id": "74c97e0d87b2387465a6b746bb4725e2",
             "name": "Delete Harvest Source Ent",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/source\/{ident}",
             "description": "",
@@ -1775,11 +1775,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "11ed46090aeeb5c4978029933f5ae265",
+            "id": "e960fc98d1fe0b4c45131d3dd970c640",
             "name": "Get Harvest Source Ent",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/source\/{ident}",
             "description": "Get a single source given an ID or a slug",
@@ -1806,11 +1806,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "f19739031a292350edb0eaef553228e6",
+            "id": "18c2e29fc84edc4043822eed485ae913",
             "name": "Get Harvest Source Ent Jobs",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/source\/{ident}\/jobs\/",
             "description": "List all jobs for a given source",
@@ -1851,11 +1851,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6733e8b9249e55410d751990fe035e60",
+            "id": "fa1320e6dccaaf6c6a46a180adb25d57",
             "name": "Get Harvest Source Ent Preview",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/source\/{ident}\/preview",
             "description": "Preview a single harvest source given an ID or a slug",
@@ -1882,11 +1882,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "cb32ea81359f7557d03caa7e390435a4",
+            "id": "8301e5710366e2153307ae7e5d80decc",
             "name": "Add Harvest Source Ent Valate",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/source\/{ident}\/validate",
             "description": "Validate or reject an harvest source",
@@ -1920,11 +1920,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "e150ff1d431cc6a2c6266d61f4143663",
+            "id": "a5e51d52831dfdac57bce1858d1f0649",
             "name": "Get Harvest Sources",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/sources\/",
             "description": "List all harvest sources",
@@ -1951,11 +1951,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "d147fab54b5e0a25876e4d7bc9c4d263",
+            "id": "9386df7becf9908d55e0f990254069b3",
             "name": "Add Harvest Sources",
             "url": "httpscatalog.data.gov\/api\/3\/\/harvest\/sources\/",
             "description": "Create a new harvests source",
@@ -1982,11 +1982,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "379f73f5cac51241aeedd5cf7b81c289",
+            "id": "be5b3e586b07f1586bda3b40b18947fa",
             "name": "Get Issues",
             "url": "httpscatalog.data.gov\/api\/3\/\/issues\/",
             "description": "List all Issues",
@@ -2041,11 +2041,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "aca8503c1d83367845f337a99868e833",
+            "id": "1670887b90e4bb2558f31e0f633fe475",
             "name": "Add Issues",
             "url": "httpscatalog.data.gov\/api\/3\/\/issues\/",
             "description": "Create a new Issue",
@@ -2072,11 +2072,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "f8acc13d856ca39c60786bdb8d96da99",
+            "id": "5de1233fa923396879200a52112982df",
             "name": "Get Issues",
             "url": "httpscatalog.data.gov\/api\/3\/\/issues\/{id}\/",
             "description": "Get an issue given its ID",
@@ -2103,11 +2103,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "140d0fc7660aa39dae3cae30ec551676",
+            "id": "491684faa9da10f86e3f4a51bbc1baf6",
             "name": "Add Issues",
             "url": "httpscatalog.data.gov\/api\/3\/\/issues\/{id}\/",
             "description": "Add comment and optionnaly close an issue given its ID",
@@ -2141,11 +2141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "96c848f06df63c6242481dc9dabd5213",
+            "id": "37eef9a951bbcdcc5c3b3390e86a6c19",
             "name": "Get Me",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/",
             "description": "Fetch the current user (me) identity",
@@ -2164,11 +2164,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "5431b3659bb8d265c1a096923e948c49",
+            "id": "07bdebb073cadf5264af36e8facd1a38",
             "name": "Put Me",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/",
             "description": "Update my profile",
@@ -2187,11 +2187,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6da68dda500e04a8894cf7de6855c58b",
+            "id": "093070b98b96882bb560e3dd62cf1d8f",
             "name": "Delete Me Apikey",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/apikey",
             "description": "Clear\/destroy an apikey",
@@ -2210,11 +2210,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "4468a2e6bae46e70fe7b9332fbfb81ef",
+            "id": "a4b6c10db854ac028a473e611653b3dc",
             "name": "Add Me Apikey",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/apikey",
             "description": "(Re)Generate my API Key",
@@ -2233,11 +2233,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6f6d283831186c623289a60537c108df",
+            "id": "c71ce1ab93e62a36ced4515a90cefbaf",
             "name": "Add Me Avatar",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/avatar",
             "description": "Upload a new avatar",
@@ -2271,11 +2271,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "af687fae843f0ddc25e84d8eeb2ad43f",
+            "id": "be5c446be49741a90de17c26cf72dd3c",
             "name": "Get Me Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/datasets\/",
             "description": "List all my datasets (including private ones)",
@@ -2294,11 +2294,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "cd0149f5bf1e5813474ef53d3639c32d",
+            "id": "929ddc1eca8140ab496a212a06151d93",
             "name": "Get Me Metrics",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/metrics\/",
             "description": "Fetch the current user (me) metrics",
@@ -2317,11 +2317,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "8cc163b6a2ed1f369c8a411d86258edc",
+            "id": "39338a6f8f205f455d08f33af1a73257",
             "name": "Get Me Org Community Resources",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/org_community_resources\/",
             "description": "List all community resources related to me and my organizations",
@@ -2348,11 +2348,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "7c0e42d1c8cacd5726ef37600542c702",
+            "id": "22f9add075d648d947019fe79b9ef2cb",
             "name": "Get Me Org Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/org_datasets\/",
             "description": "List all datasets related to me and my organizations",
@@ -2379,11 +2379,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "27d936b5eb11035bb407bcbcab2beeb5",
+            "id": "46ffeaa20fae4da6fcaf1f4bfdd937cc",
             "name": "Get Me Org Discussions",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/org_discussions\/",
             "description": "List all discussions related to my organizations",
@@ -2410,11 +2410,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "40e267b09924ebc904a911d1ca4813b4",
+            "id": "4c912f21d033ca3bcca31334d585e99d",
             "name": "Get Me Org Issues",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/org_issues\/",
             "description": "List all issues related to my organizations",
@@ -2441,11 +2441,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "3565cc07f282dbd2a590a140fe7bd490",
+            "id": "a274d103b024ec2833c56a354d69b2d1",
             "name": "Get Me Org Reuses",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/org_reuses\/",
             "description": "List all reuses related to me and my organizations",
@@ -2472,11 +2472,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "0b6deb76baa1f3bdcccb5809e17f2e12",
+            "id": "886d2d26d99465a8079102770bb05c0d",
             "name": "Get Me Reuses",
             "url": "httpscatalog.data.gov\/api\/3\/\/me\/reuses\/",
             "description": "List all my reuses (including private ones)",
@@ -2495,11 +2495,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "acea955d3c4c3cd2a25a955841188a87",
+            "id": "c3a0345f506fabbc60d8e4fdd02a2361",
             "name": "Get Metrics",
             "url": "httpscatalog.data.gov\/api\/3\/\/metrics\/{id}",
             "description": "Fetch metrics for an object given its ID",
@@ -2554,11 +2554,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "e553a6163d9f4a4c34e4461646abeb4d",
+            "id": "8cb9b253e8fe1895508c3789728eb477",
             "name": "Get Notifications",
             "url": "httpscatalog.data.gov\/api\/3\/\/notifications\/",
             "description": "List all current user pending notifications",
@@ -2577,11 +2577,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "88c6162cb15ad2bef7a8748d53fa3d4c",
+            "id": "192e50d1bce413c76e735b0e72ad0011",
             "name": "Get Oembeds",
             "url": "httpscatalog.data.gov\/api\/3\/\/oembeds\/",
             "description": "The returned payload is a list of OEmbed formatted responses",
@@ -2608,11 +2608,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "4b627a24e05c74c22ba5c5fc8e632c9d",
+            "id": "8f3e7d58800a97d0ab462e7418ba462c",
             "name": "Get Organizations",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/",
             "description": "List or search all organizations",
@@ -2702,11 +2702,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ad195fbbaa496cdab865d77c89e8906f",
+            "id": "db562783efe333c690ec44f3f080244e",
             "name": "Add Organizations",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/",
             "description": "Create a new organization",
@@ -2733,11 +2733,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "f9f93a12cf1b173a0e04572a607957dc",
+            "id": "c9090749b723bc050453ed948cd6a92e",
             "name": "Get Organizations Badges",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/badges\/",
             "description": "List all available organization badges and their labels",
@@ -2756,11 +2756,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "911270a3cda1a209df09d951715a141f",
+            "id": "0466a439580fbc1c85a4d2fad013a7d2",
             "name": "Get Organizations Suggest",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/suggest\/",
             "description": "Suggest organizations",
@@ -2794,11 +2794,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "d32719e23f2686cedc6665cd4bc75e92",
+            "id": "3d5b1072683a32057a7c65c150dfd2b3",
             "name": "Delete Organizations  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{id}\/followers\/",
             "description": "Unfollow an object given its ID",
@@ -2825,11 +2825,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "2f4a74cbef57e27cd3e9a5f4fd6f3e8e",
+            "id": "3520545c36c308c0ca7a20754cc094f8",
             "name": "Get Organizations  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{id}\/followers\/",
             "description": "List all followers for a given object",
@@ -2870,11 +2870,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "a60cbb5fa4dd2bf0d1a4b991cbd2bdb7",
+            "id": "76da5d5afb88ea422c7f1f03f25dc203",
             "name": "Add Organizations  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{id}\/followers\/",
             "description": "Follow an object given its ID",
@@ -2901,11 +2901,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "59513a43f0fd9291e644f3940547fe0e",
+            "id": "b7c2f4c2aa6d1b59aa4e1fb8458f7499",
             "name": "Delete Organizations Org",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/",
             "description": "Delete a organization given its identifier",
@@ -2932,11 +2932,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "7d897f50138dc2fa901b95177846dbe6",
+            "id": "805760ceae64445d058a0c4a7eb31431",
             "name": "Get Organizations Org",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/",
             "description": "Get a organization given its identifier",
@@ -2963,11 +2963,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "5ac19c8d5a501026b5584f3e733bc22b",
+            "id": "a0c4ec5dd4b479c87a5f00944194aca3",
             "name": "Put Organizations Org",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/",
             "description": "Update a organization given its identifier",
@@ -3001,11 +3001,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "06416d149e246ccd1fe1f14ce768b511",
+            "id": "de193c8da01aeddd7edc94f5a7f62427",
             "name": "Add Organizations Org Badges",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/badges\/",
             "description": "Create a new badge for a given organization",
@@ -3039,11 +3039,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "fb6d904b4fb464ba958fb68589653cbc",
+            "id": "b79ec6b6c63a94f6cfa3b54becb164f9",
             "name": "Delete Organizations Org Badges Badge Kind",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/badges\/{badge_kind}\/",
             "description": "Delete a badge for a given organization",
@@ -3077,11 +3077,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "1c5969795ab45143c23708e0b176ce26",
+            "id": "bd6d493baaa5279bcb97b93ac299d3cc",
             "name": "Get Organizations Org Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/datasets\/",
             "description": "List organization datasets (including private ones when member)",
@@ -3108,11 +3108,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "1a4e83ea3d105c3e822cbb2df01140a5",
+            "id": "f385a5f8340b7404435ef55ea6564b92",
             "name": "Get Organizations Org Discussions",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/discussions\/",
             "description": "List organization discussions",
@@ -3139,11 +3139,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "15ab8ad87c32b26ab59607dc7cd3535e",
+            "id": "4bf129a74f77762f82383ccfe84718aa",
             "name": "Get Organizations Org Issues",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/issues\/",
             "description": "List organization issues",
@@ -3170,11 +3170,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "620cc29453775e06ec9d6ac1a6f0a962",
+            "id": "dabba88edba7ea211bf2a3f37dd79ee3",
             "name": "Add Organizations Org Logo",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/logo",
             "description": "Upload a new logo",
@@ -3215,11 +3215,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "87726e4eabef13fca7571a0d6e7218cd",
+            "id": "c4e268804e9f759641ac1aba8d5e5b2e",
             "name": "Put Organizations Org Logo",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/logo",
             "description": "Set the logo BBox",
@@ -3260,11 +3260,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ab506e5ed04ee1d830786e1d272ee27a",
+            "id": "b71d1c26336e46c3a3c2f7e20dde1535",
             "name": "Delete Organizations Org Member User",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/member\/{user}",
             "description": "Delete member from an organization",
@@ -3298,11 +3298,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "4505ddbb3cff73ba9765baaa77f433b3",
+            "id": "7492c04ac69672fbd401d5e60200ed24",
             "name": "Add Organizations Org Member User",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/member\/{user}",
             "description": "Add a member into a given organization",
@@ -3343,11 +3343,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "bd9ebc5690f4cfa359ff1771372d5ba2",
+            "id": "53f6a45323f615877a13507bf2fb1fc7",
             "name": "Put Organizations Org Member User",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/member\/{user}",
             "description": "Update member status into a given organization",
@@ -3388,11 +3388,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "0388a0ee8c35896812d3c52a5a823241",
+            "id": "3e1d6e98f0d5fb6e825caf85764e9363",
             "name": "Get Organizations Org Membership",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/membership\/",
             "description": "List membership requests for a given organization",
@@ -3426,11 +3426,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "87a32eb0b9f7f88549cbb35c154e4235",
+            "id": "4919efeb23ad1a3eebd521b6dae46cde",
             "name": "Add Organizations Org Membership",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/membership\/",
             "description": "Apply for membership to a given organization",
@@ -3457,11 +3457,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ab0a8025d22e715ead788fd32b5093f0",
+            "id": "52a4572c36851f8a18a9c6b4dc1f3ca5",
             "name": "Add Organizations Org Membership  Accept",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/membership\/{id}\/accept\/",
             "description": "Accept user membership to a given organization",
@@ -3495,11 +3495,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "db9eac1ddb05fd3b576e203536d16b3d",
+            "id": "15bc29f14c380742cf29abcbb1aaf1bf",
             "name": "Add Organizations Org Membership  Refuse",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/membership\/{id}\/refuse\/",
             "description": "Refuse user membership to a given organization",
@@ -3547,11 +3547,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6f7c222d478971e651eea2eac0717507",
+            "id": "4e52ebe9f6543d12a8a38cf44b7949c9",
             "name": "Get Organizations Org Reuses",
             "url": "httpscatalog.data.gov\/api\/3\/\/organizations\/{org}\/reuses\/",
             "description": "List organization reuses (including private ones when member)",
@@ -3578,11 +3578,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "aa92d18714dcc98675c8e3223f66acf2",
+            "id": "33d3bcb12221e6927277c8aa65e5b716",
             "name": "Posts",
             "url": "httpscatalog.data.gov\/api\/3\/\/posts\/",
             "description": "List all posts",
@@ -3616,11 +3616,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6504affd532745e9651c83433847b01a",
+            "id": "e7ee3e526651d477d56cb28db54d40f8",
             "name": "Add Post",
             "url": "httpscatalog.data.gov\/api\/3\/\/posts\/",
             "description": "Create a post",
@@ -3647,11 +3647,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "05e377a60bbb00962470fd93882da918",
+            "id": "2c24a5239bc8a85a4aaefbc1271edda8",
             "name": "Delete Post",
             "url": "httpscatalog.data.gov\/api\/3\/\/posts\/{post}\/",
             "description": "Delete a given post",
@@ -3678,11 +3678,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "7ac387fe3bc71f5f1d0e4de0d1c2b91c",
+            "id": "45b4877a256e128109d94267da180928",
             "name": "Get Post",
             "url": "httpscatalog.data.gov\/api\/3\/\/posts\/{post}\/",
             "description": "Get a given post",
@@ -3709,11 +3709,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "8d40d01dbaa4ecfd2bed58ba2c40c5cf",
+            "id": "48adf5c10313222582dd28cb36107c14",
             "name": "Update Post",
             "url": "httpscatalog.data.gov\/api\/3\/\/posts\/{post}\/",
             "description": "Update a given post",
@@ -3747,11 +3747,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "09361a6885dcf6665e70b19229bddebb",
+            "id": "813776377cfaf9e169ddf6ee82f830b0",
             "name": "Add Post Image",
             "url": "httpscatalog.data.gov\/api\/3\/\/posts\/{post}\/image",
             "description": "Upload a new image",
@@ -3792,11 +3792,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "529766272afcc1a8ac9f150812035836",
+            "id": "7d5975784d85fe84bcd96bfbf2e10e19",
             "name": "Update Post Image",
             "url": "httpscatalog.data.gov\/api\/3\/\/posts\/{post}\/image",
             "description": "Set the image BBox",
@@ -3837,11 +3837,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "abfc15046d9e9b1051e51ef655eadb1c",
+            "id": "be4d758e396b0296a8e5505b92038a67",
             "name": "Get Reuses",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/",
             "description": "Get Reuses",
@@ -3966,11 +3966,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "c15bc557a5da059d5de3064bb0a42c45",
+            "id": "953a98d30ce1720af028da4a21c67ec2",
             "name": "Add Reuses",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/",
             "description": "Create a new object",
@@ -3997,11 +3997,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ca7e4e325bac4d6d1f21bbbbef7d8647",
+            "id": "a061e4e93169e9634fbb1558572e7a38",
             "name": "Get Reuses Badges",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/badges\/",
             "description": "List all available reuse badges and their labels",
@@ -4020,11 +4020,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "b517e9c3bd31f3f5b58038f3e5aa97f1",
+            "id": "9902bfb0109c7ff84ee04553ba8caefa",
             "name": "Get Reuses Suggest",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/suggest\/",
             "description": "Suggest reuses",
@@ -4058,11 +4058,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "36ec4638443bd592ac79c41d1563b825",
+            "id": "fde9d020f84907189dbc81cdcb93c598",
             "name": "Get Reuses Types",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/types\/",
             "description": "List all reuse types",
@@ -4081,11 +4081,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "5649531340d1f4825d84e3bf53a43a0b",
+            "id": "86cc8e36c4228ca6c0cba3197904be1c",
             "name": "Delete Reuses  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{id}\/followers\/",
             "description": "Unfollow an object given its ID",
@@ -4112,11 +4112,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "2b798e1bdb2a2de823bbe3dada945515",
+            "id": "9120bee223530a725968a23552f6cea3",
             "name": "Get Reuses  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{id}\/followers\/",
             "description": "List all followers for a given object",
@@ -4157,11 +4157,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6ca5de02b9b30d1d0ec0616d6c97456d",
+            "id": "d379d18fa338e510a6fc751d32939646",
             "name": "Add Reuses  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{id}\/followers\/",
             "description": "Follow an object given its ID",
@@ -4188,11 +4188,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "57fd1a36e900da266b621987b0377a7e",
+            "id": "8a0616650e273c4fdd7499817d2ec234",
             "name": "Delete Reuses Reuse",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/",
             "description": "Delete a given reuse",
@@ -4219,11 +4219,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "0e4ece20298b93ba27f8946ee7cf8d99",
+            "id": "d2dcf6c24458df35a8a293e67b4bb090",
             "name": "Get Reuses Reuse",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/",
             "description": "Fetch a given reuse",
@@ -4250,11 +4250,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "48a327c17d3a14d4c6931a2c7ce5c134",
+            "id": "b5dbff09ec81d2a64ea81ee38170f32c",
             "name": "Put Reuses Reuse",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/",
             "description": "Update a given reuse",
@@ -4288,11 +4288,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "60199b728604f8517d2f38b70258d190",
+            "id": "734cdfcc98ca4bc1f976e86f0a175ae5",
             "name": "Add Reuses Reuse Badges",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/badges\/",
             "description": "Create a new badge for a given reuse",
@@ -4326,11 +4326,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "14652f8da29d0862561d52f0248703c3",
+            "id": "b22a5ecc56f784e17f0b58395c3ba4cc",
             "name": "Delete Reuses Reuse Badges Badge Kind",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/badges\/{badge_kind}\/",
             "description": "Delete a badge for a given reuse",
@@ -4364,11 +4364,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "c6d093e051714ee6156282e226cc7bfe",
+            "id": "bfcfd8452ff6c18eeef2617720e8b77d",
             "name": "Add Reuses Reuse Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/datasets\/",
             "description": "Add a dataset to a given reuse",
@@ -4402,11 +4402,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "2d433c74a815c38d9fbb1a39cb4d163b",
+            "id": "bcdc11a3ff7a308bc7e581c44d6eb5c5",
             "name": "Delete Reuses Reuse Featured",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/featured\/",
             "description": "Unmark a reuse as featured",
@@ -4433,11 +4433,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "a27a8a94b77a32187cbcfa934f47f62f",
+            "id": "10cc975dd2b4483d5f2beded1bcbc774",
             "name": "Add Reuses Reuse Featured",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/featured\/",
             "description": "Mark a reuse as featured",
@@ -4464,11 +4464,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "68a8756acdfa00d449889c4230eba483",
+            "id": "5bf8c9bd4657095d9248ef0de852506b",
             "name": "Add Reuses Reuse Image",
             "url": "httpscatalog.data.gov\/api\/3\/\/reuses\/{reuse}\/image",
             "description": "Upload a new reuse image",
@@ -4509,11 +4509,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "830a7b2a1f2eb208c0f421e8124b56e1",
+            "id": "a8958b716c5980464bc5c6a4f68c350f",
             "name": "Get Site",
             "url": "httpscatalog.data.gov\/api\/3\/\/site\/",
             "description": "Site-wide variables",
@@ -4532,11 +4532,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "20cb4619c527055e1332025b3f7c6c15",
+            "id": "97430722222b015e36b3c1c007a395a4",
             "name": "Get Site Home Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/site\/home\/datasets\/",
             "description": "List homepage datasets",
@@ -4555,11 +4555,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "05c630263e85d5bd8f2636be9293c59b",
+            "id": "bdebc5767b9199dd11cf29b63b4f1c54",
             "name": "Put Site Home Datasets",
             "url": "httpscatalog.data.gov\/api\/3\/\/site\/home\/datasets\/",
             "description": "Set the homepage datasets editorial selection",
@@ -4586,11 +4586,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "d528ac83c6497be0ff03b694e548d5f5",
+            "id": "b522b6e15ff394e37ea2a0a238bad437",
             "name": "Get Site Home Reuses",
             "url": "httpscatalog.data.gov\/api\/3\/\/site\/home\/reuses\/",
             "description": "List homepage featured reuses",
@@ -4609,11 +4609,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "9ebb43a451d85890f44e5a783d0ab87c",
+            "id": "e5e68ea2cd85104c0b727bbaf8178a2b",
             "name": "Put Site Home Reuses",
             "url": "httpscatalog.data.gov\/api\/3\/\/site\/home\/reuses\/",
             "description": "Set the homepage reuses editorial selection",
@@ -4640,11 +4640,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "7190527b71a7dcd5844c57b5d5f8d77d",
+            "id": "6630b0cbab2931c42070558cc6ba9559",
             "name": "Get Spatial Coverage Level",
             "url": "httpscatalog.data.gov\/api\/3\/\/spatial\/coverage\/{level}",
             "description": "List each zone for a given level with their datasets count",
@@ -4671,11 +4671,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "35efbd9e782eb030c7ce95c0dd0cfe23",
+            "id": "0e5fd183cef0191fad41fc015b3bb09e",
             "name": "Get Spatial Granularities",
             "url": "httpscatalog.data.gov\/api\/3\/\/spatial\/granularities",
             "description": "List all known spatial granularities",
@@ -4694,11 +4694,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "07b0b3def9f7169d4bf63cc75781b530",
+            "id": "e2282dc638546fb3cb2296070da6dc65",
             "name": "Get Spatial Levels",
             "url": "httpscatalog.data.gov\/api\/3\/\/spatial\/levels",
             "description": "List all known levels",
@@ -4717,11 +4717,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "1984d7e1cb1725a66fc6833583e853e0",
+            "id": "184713c7cedddb36e27a6a9bfae1e0ca",
             "name": "Get Spatial Zone",
             "url": "httpscatalog.data.gov\/api\/3\/\/spatial\/zone\/{id}",
             "description": "Fetch a zone",
@@ -4748,11 +4748,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "226c2b5f108d31786a9b1a7ceb829c91",
+            "id": "d52a158ba13d559f7fff959d1ef77027",
             "name": "Get Spatial Zones Suggest",
             "url": "httpscatalog.data.gov\/api\/3\/\/spatial\/zones\/suggest",
             "description": "Suggest geospatial zones",
@@ -4786,11 +4786,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "d9890448e36c74abe056ff08f5353762",
+            "id": "ceec6b7592bebe505bf87eb6d3e20bb6",
             "name": "Get Spatial Zones S",
             "url": "httpscatalog.data.gov\/api\/3\/\/spatial\/zones\/{ids}",
             "description": "Fetch a zone list as GeoJSON",
@@ -4817,11 +4817,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "6ab8274d7c749afc52953e2f33970766",
+            "id": "321ec58cf1fd0b345f941b48701a6c89",
             "name": "Get Tags Suggest",
             "url": "httpscatalog.data.gov\/api\/3\/\/tags\/suggest\/",
             "description": "Suggest tags",
@@ -4855,11 +4855,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "5412a99e1ff13f297f71d03d370d0733",
+            "id": "53febdf4a11bd2e5116bbb9337ec3a82",
             "name": "Get Territory Suggest",
             "url": "httpscatalog.data.gov\/api\/3\/\/territory\/suggest\/",
             "description": "",
@@ -4893,11 +4893,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "b94628752c6dd02552906bdda4dda737",
+            "id": "68b0b187fa70be8432014dfb2420ad17",
             "name": "Get Topics",
             "url": "httpscatalog.data.gov\/api\/3\/\/topics\/",
             "description": "List all topics",
@@ -4931,11 +4931,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ddf763f7df5b589679e693ddeaea2970",
+            "id": "289609f0a6d20ce460247d918cee15ff",
             "name": "Add Topics",
             "url": "httpscatalog.data.gov\/api\/3\/\/topics\/",
             "description": "Create a topic",
@@ -4962,11 +4962,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "9c110b4d87664070f8f9a25155861374",
+            "id": "7a922cb296b5bdcd36f4512eace5f09a",
             "name": "Delete Topics Topic",
             "url": "httpscatalog.data.gov\/api\/3\/\/topics\/{topic}\/",
             "description": "Delete a given topic",
@@ -4993,11 +4993,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "c21ccea6cfbe0b9ce65ef65aff72841e",
+            "id": "add27ba8ce5da18f2253473c631c2722",
             "name": "Get Topics Topic",
             "url": "httpscatalog.data.gov\/api\/3\/\/topics\/{topic}\/",
             "description": "Get a given topic",
@@ -5024,11 +5024,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "834f2d6ca47e66810ff20666f4ce0a48",
+            "id": "b6b6cd6975fd61ebcca06e8f02e78ba4",
             "name": "Put Topics Topic",
             "url": "httpscatalog.data.gov\/api\/3\/\/topics\/{topic}\/",
             "description": "Update a given topic",
@@ -5062,11 +5062,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "056f65c0691bf386c1541596704f6e1d",
+            "id": "19dac49b1578d1674be903200b48fca7",
             "name": "Get Transfer",
             "url": "httpscatalog.data.gov\/api\/3\/\/transfer\/",
             "description": "List all transfer requests",
@@ -5085,11 +5085,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "c598c18e0f16a8f9a59d049c00369ef7",
+            "id": "cd54bfda3a518fcec5837d4cb62f544d",
             "name": "Add Transfer",
             "url": "httpscatalog.data.gov\/api\/3\/\/transfer\/",
             "description": "Initiate transfer request",
@@ -5116,11 +5116,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "1a0dcc10a56de0ee3871324b386dab69",
+            "id": "d339d574c7c5e7794e3432ea18113fc6",
             "name": "Get Transfer",
             "url": "httpscatalog.data.gov\/api\/3\/\/transfer\/{id}\/",
             "description": "Fetch a transfer request given its identifier",
@@ -5147,11 +5147,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "f9cc6c5721773ad4664c283034d3119e",
+            "id": "9883f3058f58194851c105c8db121aec",
             "name": "Add Transfer",
             "url": "httpscatalog.data.gov\/api\/3\/\/transfer\/{id}\/",
             "description": "Respond to a transfer request",
@@ -5185,11 +5185,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "9734da17b185d8d034379c73466d88fc",
+            "id": "0fa46a45b197ec4b092802fb2815dce4",
             "name": "Get Users",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/",
             "description": "List all objects",
@@ -5265,11 +5265,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "0f514b28be04c22068723e50e9c6d347",
+            "id": "699352d85c6cab54d68f6e6290063fee",
             "name": "Add Users",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/",
             "description": "Create a new object",
@@ -5288,11 +5288,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "33ac8c79f8d35ddd68004f43fa92865b",
+            "id": "f66438320d89d4c79f5a574edea50fd3",
             "name": "Get Users Suggest",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/suggest\/",
             "description": "Suggest users",
@@ -5326,11 +5326,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "f898c5f3ebf9588d84f6eff3a2612b02",
+            "id": "3cbf81eca938fb066885dbaea29ac0c0",
             "name": "Delete Users  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/{id}\/followers\/",
             "description": "Unfollow an object given its ID",
@@ -5357,11 +5357,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "84839849fb330858b72046da995479e3",
+            "id": "a5df272b808caeffd7910fcd52e49459",
             "name": "Get Users  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/{id}\/followers\/",
             "description": "List all followers for a given object",
@@ -5402,11 +5402,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ce9da377a5d50945561a29cc7b94ba02",
+            "id": "be847e1bd90174ee6b8eb57e00f52f85",
             "name": "Add Users  Followers",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/{id}\/followers\/",
             "description": "Follow an user given its ID",
@@ -5433,11 +5433,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "4306882f86cec2016b196ba547a9abfe",
+            "id": "ee73a028c2f0cf90a152cc34999ef1fd",
             "name": "Delete Users User",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/{user}\/",
             "description": "Delete a given object",
@@ -5464,11 +5464,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "8b7357dad26beede6d52e3954956ebee",
+            "id": "3b8851ba3e5a3ebd79cc1128fd84891b",
             "name": "Get Users User",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/{user}\/",
             "description": "Get a given object",
@@ -5495,11 +5495,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "2d3d5c037147c8cc2b15f433f9650171",
+            "id": "8728ca5eb9919da0543c9acb0bc3df94",
             "name": "Put Users User",
             "url": "httpscatalog.data.gov\/api\/3\/\/users\/{user}\/",
             "description": "Update a given object",
@@ -5533,11 +5533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "40f413ca056a6642163dae2032c0a734",
+            "id": "051aab88c770014b92d1690822aa182f",
             "name": "Get Workers Jobs",
             "url": "httpscatalog.data.gov\/api\/3\/\/workers\/jobs\/",
             "description": "List all scheduled jobs",
@@ -5556,11 +5556,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "9c090e656c1e40acc2d7af6d70656baa",
+            "id": "8cb7ddf89908638a65de4ba5a3c03357",
             "name": "Add Workers Jobs",
             "url": "httpscatalog.data.gov\/api\/3\/\/workers\/jobs\/",
             "description": "Create a new scheduled job",
@@ -5587,11 +5587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "06d8bf7371caa7465b8446700fccdea4",
+            "id": "6ac2aef15c9715e84b98d18178e31d1d",
             "name": "Get Workers Jobs Schedulables",
             "url": "httpscatalog.data.gov\/api\/3\/\/workers\/jobs\/schedulables",
             "description": "List all schedulable jobs",
@@ -5610,11 +5610,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "ac8efab557906917f7e1a967a7e724a8",
+            "id": "ba3ca46a5eb6aff788a38a2691720697",
             "name": "Delete Workers Jobs",
             "url": "httpscatalog.data.gov\/api\/3\/\/workers\/jobs\/{id}",
             "description": "Delete a single scheduled job",
@@ -5641,11 +5641,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "403c035143c0afdfa212b0b95a60b4fc",
+            "id": "5b0bf90d4a999dc796259126b4e0103a",
             "name": "Get Workers Jobs",
             "url": "httpscatalog.data.gov\/api\/3\/\/workers\/jobs\/{id}",
             "description": "Fetch a single scheduled job",
@@ -5672,11 +5672,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "87f0997ed2f8323a9a7e86248cc8de33",
+            "id": "60c171fcfc7b63be5043e0410f874348",
             "name": "Put Workers Jobs",
             "url": "httpscatalog.data.gov\/api\/3\/\/workers\/jobs\/{id}",
             "description": "Update a single scheduled job",
@@ -5703,11 +5703,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         },
         {
-            "id": "99dc610df025631d69d72b58a88bbdd7",
+            "id": "827809bd675009030c2edfe7911a0765",
             "name": "Get Workers Tasks",
             "url": "httpscatalog.data.gov\/api\/3\/\/workers\/tasks\/{id}",
             "description": "Get a tasks status given its ID",
@@ -5734,7 +5734,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2aea2639716af3f1f2fc5ff413ea0b44",
+            "collectionId": "ba9be5aa75bc9bb7129c7c1a55cce1a6",
             "rawModeData": ""
         }
     ]
