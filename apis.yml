@@ -12,7 +12,7 @@ description: Data.gov is the United States federal government's open data catalo
   resources.data.gov (open data policy resources), and the api.data.gov shared API
   gateway used by 25+ federal agencies for 450+ APIs.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/data-gov/refs/heads/main/apis.yml
 created: '2026-05-25'
 modified: '2026-05-25'
