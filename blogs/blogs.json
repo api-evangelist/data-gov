@@ -2,8 +2,11 @@
   "repo": "data-gov",
   "feeds": [
     {
-      "source": "https://data.gov/news/",
-      "error": "HTTPError"
+      "source": "https://ckan.org/blog/rss",
+      "feed_url": "https://ckan.org/blog/rss",
+      "title": "",
+      "saved": 2,
+      "method": "feed"
     },
     {
       "source": "https://strategy.data.gov/",
@@ -13,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 26
 }
