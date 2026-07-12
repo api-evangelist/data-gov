@@ -118,6 +118,8 @@ maintainers:
 - FN: Kin Lane
   email: info@apievangelist.com
 common:
+- type: DomainSecurity
+  url: security/data-gov-domain-security.yml
 - type: GitHub
   url: https://github.com/GSA/data.gov
 - type: GitHubOrganization
