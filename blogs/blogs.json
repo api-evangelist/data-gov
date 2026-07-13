@@ -5,7 +5,7 @@
       "source": "https://ckan.org/blog/rss",
       "feed_url": "https://ckan.org/blog/rss",
       "title": "",
-      "saved": 2,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -16,6 +16,6 @@
       "method": "none"
     }
   ],
-  "fetched": "2026-06-27T12:03:07Z",
-  "post_count": 26
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 66
 }
