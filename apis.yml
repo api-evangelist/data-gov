@@ -129,6 +129,10 @@ maintainers:
 - FN: Kin Lane
   email: info@apievangelist.com
 common:
+- type: IssueTracker
+  url: https://github.com/GSA/catalog.data.gov/issues
+- type: SecurityPolicy
+  url: https://github.com/GSA/catalog.data.gov/blob/main/SECURITY.md
 - type: DomainSecurity
   url: security/data-gov-domain-security.yml
 - type: GitHub
