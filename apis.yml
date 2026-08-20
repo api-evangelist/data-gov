@@ -111,6 +111,11 @@ apis:
   tags:
   - Catalog
   - CKAN
+  - Publishers
+  - Inventory
+  tags_raw:
+  - Catalog
+  - CKAN
   - Publisher
   - Inventory
   humanURL: https://inventory.data.gov/
