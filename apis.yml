@@ -12,6 +12,18 @@ description: Data.gov is the United States federal government's open data catalo
   resources.data.gov (open data policy resources), and the api.data.gov shared API
   gateway used by 25+ federal agencies for 450+ APIs.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
