@@ -1,0 +1,137 @@
+# Data.gov (data-gov)
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
+Data.gov is the United States federal government's open data catalog, operated by the General Services Administration (GSA) Technology Transformation Services. It indexes over 300,000 datasets, tools, and resources from federal, state, local, and tribal governments, universities, and non-profits. The catalog runs on CKAN 2.11 and exposes the standard CKAN Action API at `catalog.data.gov/api/3/action` for programmatic discovery and retrieval of datasets, organizations, groups, tags, and resources. Data.gov also defines and harvests the federal Project Open Data / DCAT-US 1.1 schema (the `/data.json` endpoint that every federal executive agency must publish under the OPEN Government Data Act of 2018).
+
+**URL:** [Visit APIs.json](https://raw.githubusercontent.com/api-evangelist/data-gov/refs/heads/main/apis.yml)
+
+**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=government-api-evangelist&utm_content=repo)
+
+## Tags
+
+ - Government, Open Data, Catalog, CKAN, Datasets, Federal, GSA, Open Government
+
+## Timestamps
+
+- **Created:** 2026-05-25
+- **Modified:** 2026-05-25
+
+## Tier
+
+**Tier 1** — Canonical U.S. federal open data catalog, mandated by the OPEN Government Data Act of 2018. Exposes the full CKAN 2.11 Action API, indexes 300,000+ datasets, defines the DCAT-US metadata standard used by every federal agency `/data.json`, and operates openly with all infrastructure code on `github.com/GSA`.
+
+## APIs
+
+### Data.gov CKAN Action API
+The CKAN Action API exposes the full Data.gov catalog programmatically. Single endpoint family at `/api/3/action/{action_name}` accepting GET (simple reads) or POST (JSON body). Key actions: `package_search`, `package_show`, `package_list`, `organization_list`, `organization_show`, `group_list`, `group_show`, `tag_list`, `resource_show`, `current_package_list_with_resources`. Responses are wrapped in `{success, result, help}`. Read access is anonymous; write actions require an API key.
+
+**Base URL:** `https://catalog.data.gov/api/3/action`
+
+- [Documentation — CKAN 2.11 API](https://docs.ckan.org/en/2.11/api/)
+- [API Reference — help_show](https://catalog.data.gov/api/3/action/help_show)
+- [Standards — DCAT-US](https://resources.data.gov/resources/dcat-us/)
+
+### Project Open Data (data.json) Catalog API
+Every U.S. federal executive branch agency is required by the Open Government Data Act of 2018 (and OMB M-13-13) to publish a public enterprise data inventory as a JSON document at `/data.json` on its primary domain, following the DCAT-US 1.1 schema. Data.gov harvests these endpoints on a regular cadence into the central CKAN catalog. The schema defines a Catalog containing Dataset records with required fields (`title`, `description`, `keyword`, `modified`, `publisher`, `contactPoint`, `identifier`, `accessLevel`, `bureauCode`, `programCode`) and optional distribution records.
+
+- [Documentation — Resources.data.gov DCAT-US](https://resources.data.gov/resources/dcat-us/)
+- [JSON Schema — Project Open Data v1.1](https://project-open-data.cio.gov/v1.1/schema/)
+- [Source — Project Open Data Dashboard](https://github.com/GSA/project-open-data-dashboard)
+
+### Data.gov Harvester (datagov-harvester)
+The harvester service ingests dataset metadata from federal, state, local, and tribal `data.json` endpoints, CKAN sources, and CSW/WAF sources on a scheduled cadence and writes records into the central catalog. Publisher-facing service; source code is open at `GSA/datagov-harvester`.
+
+- [Source — datagov-harvester](https://github.com/GSA/datagov-harvester)
+- [Portal — harvest.data.gov](https://harvest.data.gov/)
+
+### Inventory.data.gov CKAN API
+A second CKAN 2.11 instance used by federal agencies as a publishing inventory before public release on catalog.data.gov. Same CKAN Action API surface; most actions require authorization for authenticated publishers.
+
+**Base URL:** `https://inventory.data.gov/api/3/action`
+
+- [Documentation — CKAN 2.11 API](https://docs.ckan.org/en/2.11/api/)
+- [Source — inventory-app](https://github.com/GSA/inventory-app)
+
+## Common Properties
+
+- [GitHub](https://github.com/GSA/data.gov)
+- [GitHub Organization — GSA](https://github.com/GSA)
+- [Source — catalog.data.gov](https://github.com/GSA/catalog.data.gov)
+- [Portal](https://data.gov/)
+- [Catalog](https://catalog.data.gov/)
+- [Documentation](https://resources.data.gov/)
+- [Strategy](https://strategy.data.gov/)
+- [Blog](https://data.gov/news/)
+- [Twitter — @usdatagov](https://twitter.com/usdatagov)
+- [Standards — DCAT-US](https://resources.data.gov/resources/dcat-us/)
+- [Legislation — OPEN Government Data Act of 2018](https://www.congress.gov/115/plaws/publ435/PLAW-115publ435.pdf)
+- [Contact](https://data.gov/contact/)
+- [Privacy](https://data.gov/privacy-policy/)
+- [Terms of Service](https://data.gov/privacy-policy/#data-policy)
+
+## Maintainers
+
+- **Kin Lane** — info@apievangelist.com
