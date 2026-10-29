@@ -1,4 +1,4 @@
-# Data.gov (data-gov)
+# Data.gov
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,74 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Data.gov is the United States federal government's open data catalog, operated by the General Services Administration (GSA) Technology Transformation Services. It indexes over 300,000 datasets, tools, and resources from federal, state, local, and tribal governments, universities, and non-profits. The catalog runs on CKAN 2.11 and exposes the standard CKAN Action API at `catalog.data.gov/api/3/action` for programmatic discovery and retrieval of datasets, organizations, groups, tags, and resources. Data.gov also defines and harvests the federal Project Open Data / DCAT-US 1.1 schema (the `/data.json` endpoint that every federal executive agency must publish under the OPEN Government Data Act of 2018).
+Data.gov is the United States federal government's open data catalog, operated by the General Services Administration (GSA) Technology Transformation Services. It indexes over 300,000 datasets, tools, and resources from federal, state, local, and tribal governments, as well as universities and non-profits. The catalog runs on CKAN 2.11 and exposes the standard CKAN Action API at catalog.data.gov/api/3/action for programmatic discovery and retrieval of datasets, organizations, groups, tags, and resources. Data.gov also publishes the federal Project Open Data (POD) schema (data.json) catalog endpoint at /data.json on every federal agency site, which Data.gov harvests into the central catalog. Related properties include inventory.data.gov (publisher-facing CKAN inventory), resources.data.gov (open data policy resources), and the api.data.gov shared API gateway used by 25+ federal agencies for 450+ APIs.
 
-**URL:** [Visit APIs.json](https://raw.githubusercontent.com/api-evangelist/data-gov/refs/heads/main/apis.yml)
+**Areas:** Government · Open Data · Catalog · CKAN · Datasets · Federal · GSA · Open Government · Data Catalog · Government Data
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=government-api-evangelist&utm_content=repo)
+## Data.gov on APIs.io
 
-## Tags
+Everything profiled for Data.gov is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/data-gov/](https://apis.io/providers/data-gov/)** — or go straight to one of the APIs or properties below.
 
- - Government, Open Data, Catalog, CKAN, Datasets, Federal, GSA, Open Government
+### APIs (4)
 
-## Timestamps
+- [Data.gov CKAN Action API](https://apis.io/apis/data-gov/ckan-action-api/) — The CKAN Action API exposes the full Data.gov catalog programmatically. It provides read access to packages (datasets), resources (file/URL distributions),…
+- [Project Open Data (data.json) Catalog API](https://apis.io/apis/data-gov/project-open-data/) — Every U.S. federal executive branch agency is required by the Open Government Data Act of 2018 (and predecessor OMB M-13-13) to publish a public enterprise…
+- [Data.gov Harvester (datagov-harvester)](https://apis.io/apis/data-gov/datajson-harvester/) — The Data.gov harvester service ingests dataset metadata from federal, state, local, and tribal data.json endpoints, CKAN sources, and other CSW/WAF sources…
+- [Inventory.data.gov CKAN API](https://apis.io/apis/data-gov/inventory-api/) — Inventory.data.gov is a second CKAN instance (also running CKAN 2.11) used by federal agencies as a publishing inventory before public release on…
 
-- **Created:** 2026-05-25
-- **Modified:** 2026-05-25
+### Published properties
 
-## Tier
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**Tier 1** — Canonical U.S. federal open data catalog, mandated by the OPEN Government Data Act of 2018. Exposes the full CKAN 2.11 Action API, indexes 300,000+ datasets, defines the DCAT-US metadata standard used by every federal agency `/data.json`, and operates openly with all infrastructure code on `github.com/GSA`.
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-### Data.gov CKAN Action API
-The CKAN Action API exposes the full Data.gov catalog programmatically. Single endpoint family at `/api/3/action/{action_name}` accepting GET (simple reads) or POST (JSON body). Key actions: `package_search`, `package_show`, `package_list`, `organization_list`, `organization_show`, `group_list`, `group_show`, `tag_list`, `resource_show`, `current_package_list_with_resources`. Responses are wrapped in `{success, result, help}`. Read access is anonymous; write actions require an API key.
+- [Data Gov Domain Security](https://apis.io/security/data-gov/data-gov-domain-security/)
 
-**Base URL:** `https://catalog.data.gov/api/3/action`
+## Where to find this API
 
-- [Documentation — CKAN 2.11 API](https://docs.ckan.org/en/2.11/api/)
-- [API Reference — help_show](https://catalog.data.gov/api/3/action/help_show)
-- [Standards — DCAT-US](https://resources.data.gov/resources/dcat-us/)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### Project Open Data (data.json) Catalog API
-Every U.S. federal executive branch agency is required by the Open Government Data Act of 2018 (and OMB M-13-13) to publish a public enterprise data inventory as a JSON document at `/data.json` on its primary domain, following the DCAT-US 1.1 schema. Data.gov harvests these endpoints on a regular cadence into the central CKAN catalog. The schema defines a Catalog containing Dataset records with required fields (`title`, `description`, `keyword`, `modified`, `publisher`, `contactPoint`, `identifier`, `accessLevel`, `bureauCode`, `programCode`) and optional distribution records.
-
-- [Documentation — Resources.data.gov DCAT-US](https://resources.data.gov/resources/dcat-us/)
-- [JSON Schema — Project Open Data v1.1](https://project-open-data.cio.gov/v1.1/schema/)
-- [Source — Project Open Data Dashboard](https://github.com/GSA/project-open-data-dashboard)
-
-### Data.gov Harvester (datagov-harvester)
-The harvester service ingests dataset metadata from federal, state, local, and tribal `data.json` endpoints, CKAN sources, and CSW/WAF sources on a scheduled cadence and writes records into the central catalog. Publisher-facing service; source code is open at `GSA/datagov-harvester`.
-
-- [Source — datagov-harvester](https://github.com/GSA/datagov-harvester)
-- [Portal — harvest.data.gov](https://harvest.data.gov/)
-
-### Inventory.data.gov CKAN API
-A second CKAN 2.11 instance used by federal agencies as a publishing inventory before public release on catalog.data.gov. Same CKAN Action API surface; most actions require authorization for authenticated publishers.
-
-**Base URL:** `https://inventory.data.gov/api/3/action`
-
-- [Documentation — CKAN 2.11 API](https://docs.ckan.org/en/2.11/api/)
-- [Source — inventory-app](https://github.com/GSA/inventory-app)
-
-## Common Properties
-
-- [GitHub](https://github.com/GSA/data.gov)
-- [GitHub Organization — GSA](https://github.com/GSA)
-- [Source — catalog.data.gov](https://github.com/GSA/catalog.data.gov)
-- [Portal](https://data.gov/)
-- [Catalog](https://catalog.data.gov/)
+- [Website](https://www.data.gov/)
 - [Documentation](https://resources.data.gov/)
-- [Strategy](https://strategy.data.gov/)
 - [Blog](https://data.gov/news/)
-- [Twitter — @usdatagov](https://twitter.com/usdatagov)
-- [Standards — DCAT-US](https://resources.data.gov/resources/dcat-us/)
-- [Legislation — OPEN Government Data Act of 2018](https://www.congress.gov/115/plaws/publ435/PLAW-115publ435.pdf)
-- [Contact](https://data.gov/contact/)
-- [Privacy](https://data.gov/privacy-policy/)
-- [Terms of Service](https://data.gov/privacy-policy/#data-policy)
+- [Terms of service](https://data.gov/privacy-policy/#data-policy)
+- [GitHub](https://github.com/GSA)
 
-## Maintainers
+## API Evangelist rating
 
-- **Kin Lane** — info@apievangelist.com
+**Kin Score 19.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 7.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/data-gov/](https://apis.io/providers/data-gov/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Data.gov: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/data-gov/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
